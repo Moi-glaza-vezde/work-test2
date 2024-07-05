@@ -1,0 +1,118 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.wrapper {
+   font-family: 'Inter', sans-serif;
+
+   background-color: #5e5e5e;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   flex-direction: column;
+   height: 100%;
+}
+.check-list {
+   color: #ffff;
+   width: 743px;
+   height: 91px;
+   background-color: #3579f5;
+   border-radius: 10px;
+   display: flex;
+
+   &__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+   &__progress-bar {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #3579f5;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+   }
+   &__progress-bar::before {
+      content: '';
+      position: absolute;
+      background-color: #3579f5;
+      background-color: #3579f5;
+      inset: 1px;
+      border-radius: 50%;
+   }
+   &__number {
+      z-index: 2;
+      font-weight: 400;
+      font-size: 20px;
+   }
+
+   &__text-box {
+   }
+
+   &__text-1 {
+      margin-top: -5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 10px;
+
+      width: 76px;
+      height: 18px;
+
+      background: #2364db;
+      border-radius: 40px;
+   }
+
+   &__text-2 {
+      margin-top: 5px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+
+      color: #ffffff;
+   }
+
+   &__text-2-number0 {
+   }
+
+   &__text-3 {
+      margin-top: 5px;
+
+      //font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+
+      color: #ffffff;
+   }
+
+   &__btn {
+      button {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         //padding: 10px 10px;
+
+         width: 170px;
+         height: 40px;
+
+         background: #f4f8ff;
+         border-radius: 6px;
+
+         font-family: 'Inter';
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 20px;
+
+         color: #4777ed;
+      }
+   }
+}
